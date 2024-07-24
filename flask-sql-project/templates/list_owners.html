@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <h1> List of owners</h1>
+
+    <ul>
+        {% for owner in owners %}
+        <li> {{ owner }} </li>
+        {% endfor %}
+    </ul>
+</div>
+    
+{% endblock %}
